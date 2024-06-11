@@ -399,6 +399,17 @@ form {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.star-rating {
+  color: rgb(179, 1, 1);
+  font-size: 15px; 
+  opacity:90%;
+}
+
+.review_card .rating{
+  font-size: 14px;
+  opacity:90%;
+}
+
 .review_card h3 {
   color: var(--primary-color);
   margin-bottom: 10px;
