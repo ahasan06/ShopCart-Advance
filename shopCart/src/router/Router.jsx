@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../rootlayout/RootLayout";
 import Home from "../pages/Home";
 import Cart from './../pages/Cart';
+import Review from "../pages/Review";
 
 
 export const rootRouter = createBrowserRouter([
@@ -10,7 +11,8 @@ export const rootRouter = createBrowserRouter([
         element:<RootLayout/>,
         children : [
             {path:"/",index:true,element:<Home/>},
-            {path:"/cart",index:true,element:<Cart/>}
+            {path:"/cart",index:true,element:<Cart/>},
+            {path:"/review",index:true,element:<Review/>}
         ]
     }
 ])
