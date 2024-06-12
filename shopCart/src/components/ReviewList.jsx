@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext} from "react";
 import SingleReview from "./SingleReview";
 import { ReviewContext } from "../context/ReviewContext";
 

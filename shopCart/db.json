@@ -2,52 +2,77 @@
   "products": [
     {
       "id": 1,
-      "name": "SilverEdge Pro 15 ",
+      "name": "SilverEdge Pro 15",
       "price": 800,
-      "image": "https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4"
+      "image": "https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4",
+      "description": "A high-performance laptop with a 15-inch display, perfect for professional use.",
+      "longDescription": "The SilverEdge Pro 15 is a cutting-edge laptop designed for professionals who require high performance and reliability. It features a 15-inch Full HD display that offers stunning clarity and color accuracy, making it ideal for graphic design, video editing, and other demanding tasks. Under the hood, it is powered by the latest Intel Core i7 processor and comes with 16GB of RAM, ensuring smooth multitasking and fast performance. The laptop also includes a 512GB SSD for ample storage and quick access to your files. With its sleek aluminum body, backlit keyboard, and long battery life, the SilverEdge Pro 15 is the perfect companion for professionals on the go.",
+      "available": true
     },
     {
       "id": 2,
       "name": "Phantom X20 Ultra",
       "price": 500,
-      "image": "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "image": "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "A sleek and powerful smartphone with advanced camera features.",
+      "longDescription": "The Phantom X20 Ultra is a state-of-the-art smartphone that combines sleek design with powerful performance. It boasts a 6.7-inch AMOLED display with a 120Hz refresh rate, providing vibrant colors and smooth scrolling. The phone is equipped with a top-of-the-line Snapdragon 888 processor, 8GB of RAM, and 256GB of internal storage, ensuring it can handle any task with ease. Its quad-camera system, featuring a 108MP main sensor, allows you to capture stunning photos and videos in any lighting condition. Additionally, the Phantom X20 Ultra supports 5G connectivity, ensuring you stay connected at blazing-fast speeds. With its large 5000mAh battery and fast charging capabilities, this smartphone is designed to keep up with your busy lifestyle.",
+      "available": false
     },
     {
       "id": 3,
-      "name": "TabMaster G5 ",
+      "name": "TabMaster G5",
       "price": 300,
-      "image": "https://images.unsplash.com/photo-1527698266440-12104e498b76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "image": "https://images.unsplash.com/photo-1527698266440-12104e498b76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "A versatile tablet with a 10-inch display, ideal for work and entertainment.",
+      "longDescription": "The TabMaster G5 is a versatile tablet designed to meet all your work and entertainment needs. It features a 10-inch IPS display with a resolution of 1920x1200, offering crisp and clear visuals whether you're watching movies, browsing the web, or working on documents. Powered by an octa-core processor and 4GB of RAM, the TabMaster G5 provides smooth and responsive performance for all your apps and games. It comes with 64GB of internal storage, which can be expanded up to 512GB with a microSD card, ensuring you have plenty of space for your files and media. The tablet also includes a 13MP rear camera and a 5MP front camera, allowing you to take high-quality photos and video calls. With its lightweight design, long battery life, and support for stylus input, the TabMaster G5 is perfect for both productivity and entertainment on the go.",
+      "available": true
     },
     {
       "id": 4,
-      "name": "BassKing HD ",
+      "name": "BassKing HD",
       "price": 150,
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "High-definition over-ear headphones with deep bass and noise cancellation.",
+      "longDescription": "The BassKing HD headphones are designed for audiophiles who crave deep bass and crystal-clear sound. These over-ear headphones feature advanced noise cancellation technology that blocks out ambient noise, allowing you to immerse yourself in your music. The 40mm drivers deliver powerful bass and rich, detailed audio across all frequencies. The headphones are built with comfort in mind, featuring plush ear cushions and an adjustable headband for a perfect fit. The BassKing HD also includes a built-in microphone for clear voice calls and supports Bluetooth 5.0 for a stable and seamless wireless connection. With up to 30 hours of battery life on a single charge, these headphones are perfect for long listening sessions at home or on the go.",
+      "available": true
     },
     {
       "id": 5,
-      "name": "Warrior X10 ",
+      "name": "Warrior X10",
       "price": 1200,
-      "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop",
+      "description": "A high-end gaming laptop with powerful graphics and fast performance.",
+      "longDescription": "The Warrior X10 is the ultimate gaming laptop, designed to deliver unmatched performance for serious gamers. It features a 17.3-inch Full HD display with a 144Hz refresh rate, providing smooth and immersive visuals for your games. The laptop is powered by the latest Intel Core i9 processor and NVIDIA GeForce RTX 3080 graphics card, ensuring it can handle the most demanding games and applications with ease. With 32GB of RAM and a 1TB NVMe SSD, the Warrior X10 offers lightning-fast load times and ample storage for your game library. The laptop also includes a customizable RGB keyboard, advanced cooling system, and a high-quality audio system for an enhanced gaming experience. Whether you're at home or at a LAN party, the Warrior X10 is built to keep you at the top of your game.",
+      "available": true
     },
     {
       "id": 6,
       "name": "TimeSync V3",
       "price": 250,
-      "image": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop",
+      "description": "A stylish smartwatch with fitness tracking and notification features.",
+      "longDescription": "The TimeSync V3 is a stylish and functional smartwatch designed to keep you connected and on track with your fitness goals. It features a 1.4-inch AMOLED display with customizable watch faces, allowing you to personalize your device to suit your style. The watch includes advanced fitness tracking features, such as heart rate monitoring, sleep tracking, and GPS for accurate workout tracking. It also supports notifications for calls, messages, and apps, ensuring you stay connected without having to check your phone constantly. The TimeSync V3 is water-resistant up to 50 meters, making it suitable for swimming and other water activities. With a battery life of up to 7 days on a single charge, this smartwatch is designed to keep up with your active lifestyle.",
+      "available": true
     },
     {
       "id": 7,
-      "name": "SnapShot Pro 400 ",
+      "name": "SnapShot Pro 400",
       "price": 900,
-      "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop",
+      "description": "A professional-grade camera with exceptional image quality and features.",
+      "longDescription": "The SnapShot Pro 400 is a professional-grade camera designed for photographers who demand the best in image quality and performance. It features a 24.2MP full-frame sensor and a fast autofocus system, allowing you to capture stunning, high-resolution images with incredible detail. The camera supports 4K video recording, providing cinematic video quality for your projects. It also includes a variety of advanced features, such as in-body image stabilization, dual card slots, and a high-resolution electronic viewfinder. The SnapShot Pro 400 is built with a durable magnesium alloy body that is weather-sealed, ensuring it can withstand the rigors of professional use. Whether you're shooting landscapes, portraits, or action shots, this camera delivers exceptional performance and reliability.",
+      "available": true
     },
     {
       "id": 8,
-      "name": "HomeGenius Hub ",
+      "name": "HomeGenius Hub",
       "price": 400,
-      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop",
+      "description": "A smart home hub that connects and controls all your smart devices.",
+      "longDescription": "The HomeGenius Hub is the ultimate smart home hub that connects and controls all your smart devices with ease. It supports a wide range of smart home protocols, including Zigbee, Z-Wave, and Wi-Fi, allowing you to integrate and manage your smart lights, thermostats, security cameras, and more from a single interface. The hub features a user-friendly app that lets you create custom automation routines, monitor your devices, and receive alerts. It also supports voice control through Amazon Alexa and Google Assistant, making it easy to control your smart home with simple voice commands. With its sleek design and powerful performance, the HomeGenius Hub is the perfect solution for creating a connected and efficient smart home.",
+      "available": true
     }
+    
   ],
   "cart": [],
   "reviews": [

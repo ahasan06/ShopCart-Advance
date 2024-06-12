@@ -141,10 +141,12 @@ a {
 }
 
 .cart-item__actions {
+  margin: 10px 0;
+  width: 100%;
   display: flex !important;
-  flex-direction: column !important;
-  gap: 10px;
+  justify-content: space-between;
 }
+
 
 .cart-item__button{
   background:var(--primary-color);
@@ -338,7 +340,16 @@ button {
 
 button:hover {
   background-color: var(--accent-color);
+  color: black;
 }
+.button--outOfStock{
+  background: red!important;
+  
+ }
+ .button--outOfStock:hover{
+  opacity: 100%!important;
+  color: white;
+ }
 
 label {
   font-weight: bold;
@@ -425,3 +436,74 @@ h2 {
 }
 
 /* Review Section End  here  */
+
+/* Product Details card  start here  */
+.product-details-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product-details-card {
+  display: flex;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  
+}
+.card-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.card-price {
+  font-size: 20px;
+  color: #888;
+  margin: 10px 0;
+}
+.card-description{
+  font-weight: 500;
+}
+
+.card-content .card-longDescription {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-style: italic;
+  font-size: small;
+  opacity: 80%;
+}
+
+.card-content .In_Stock {
+  font-weight: bold;
+  color: #5cb85c;
+  margin-bottom: 20px;
+}
+.card-content .Out_ofStock {
+  font-weight: bold;
+  color: #b85c5c;
+  margin-bottom: 20px;
+}
+.card-rating {
+  font-size: 18px;
+  color: #ff9500;
+
+}
+
+.product-details-card{
+  display: flex;
+}
+.product-details-card .card-content{
+ flex: 2;
+}
+.product-details-card .card-image-container {
+  flex: 1;
+}
+
+.product-details-card .card-image {
+  width: 450px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product Details end   start here  */
