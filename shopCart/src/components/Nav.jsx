@@ -21,6 +21,9 @@ const Nav = () => {
                             <Link to="/" className="nav__link">Home</Link>
                         </li>
                         <li className="nav__item">
+                            <Link to="/post" className="nav__link">Post</Link>
+                        </li>
+                        <li className="nav__item">
                             <Link to="/review" className="nav__link">Page Review <span> ({review.length})</span></Link>
                         </li>
                         <li className="nav__item">
