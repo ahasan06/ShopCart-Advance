@@ -3,6 +3,7 @@
 import { useSelector,useDispatch} from "react-redux";
 import SingleReview from "./SingleReview";
 import { useEffect } from "react";
+import { setReview } from "../store/actions-creator/ReviewAction";
 
 const ReviewList = () => {
 
@@ -16,7 +17,7 @@ const ReviewList = () => {
         fetch("http://localhost:3000/reviews")
         .then(res => res.json())
         .then(data => {
-            dispatch({ type: 'SET_REVIEWS', payload: data });
+            dispatch(setReview(data));
         })
         .catch(error => console.error('Error fetching reviews:', error));
     }, []);

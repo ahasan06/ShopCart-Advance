@@ -3,6 +3,7 @@
 import {  useState  } from "react";
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import { addReview } from "../store/actions-creator/ReviewAction";
 const ReviewForm = () => {
 
     // const {dispatch} = useContext(ReviewContext)
@@ -48,7 +49,7 @@ const ReviewForm = () => {
         .then(response=>response.json())
         .then(data=>{
             
-            dispatch({type:'ADD_REVIEW',payload:data})
+            dispatch(addReview(data))
             setFormObj({ customerName: '', productName: '', description: '', rating: '' }); // Reset form fields
             setSubmitReview(false); 
         })

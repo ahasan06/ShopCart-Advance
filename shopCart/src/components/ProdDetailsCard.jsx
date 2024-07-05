@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 // import { useContext } from "react";
 // import { CartContext } from "../context/CartContext";
 import { useSelector,useDispatch } from "react-redux";
+import { addToCart,removeFromCart } from "../store/actions-creator/CartAction";
 
 const ProdDetailsCard = ({ product }) => {
 
@@ -9,17 +11,11 @@ const ProdDetailsCard = ({ product }) => {
     const dispatch = useDispatch()
 
     const addToCartHandler = () => {
-        dispatch({
-            type: "ADD_TO_CART",
-            payload: product,
-        });
+        dispatch(addToCart(product));
     };
 
     const removeToCartHandler = () => {
-        dispatch({
-            type: "REMOVE_TO_CART",
-            payload: product,
-        });
+        dispatch(removeFromCart(product));
     };
 
     const isIncart  = cart.some(item=>item.id === product.id);

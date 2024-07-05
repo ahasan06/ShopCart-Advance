@@ -39,8 +39,6 @@ import { ourStore } from './store/index';
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <Provider store={ourStore}>
-
           <RouterProvider router={rootRouter} />
-
   </Provider>
 )

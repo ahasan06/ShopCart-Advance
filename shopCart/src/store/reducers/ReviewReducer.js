@@ -1,4 +1,5 @@
-
+// Raw redux 
+/*
 const ReviewReducer = (state=[],action) => {
   console.log("Reducer State",state);
     switch (action.type) {
@@ -13,3 +14,21 @@ const ReviewReducer = (state=[],action) => {
     }
 };
 export default ReviewReducer
+*/
+
+//Redux toolkit Create Reduer=================
+import {
+    createReducer
+} from '@reduxjs/toolkit'
+
+import { addReview,setReview } from '../actions-creator/ReviewAction'
+
+export const ReviewReducer=createReducer([],(builder)=>{
+    builder
+    .addCase(addReview,(state,action)=>{
+        return [...state,action.payload];
+    })  
+    .addCase(setReview,(state,action)=>{
+        return [...action.payload];
+    })
+})

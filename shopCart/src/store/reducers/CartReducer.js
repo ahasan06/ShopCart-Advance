@@ -1,5 +1,6 @@
 // src/store/reducers/CartReducer.js
-
+// raw js code immutable logic
+/*
 const CartReducer = (state = [], action) => {
     switch (action.type) {
         case "ADD_TO_CART": {
@@ -46,3 +47,32 @@ const CartReducer = (state = [], action) => {
 };
 
 export default CartReducer;
+*/
+
+
+//Redux toolkit Create Reduer=================
+import {
+    createReducer
+} from '@reduxjs/toolkit'
+import { addToCart,removeFromCart,clearCart,modifyCart } from '../actions-creator/CartAction';
+
+export const CartReducer = createReducer([], (builder) => {
+    builder
+        .addCase(addToCart, (state, action) => {
+            const product = state.find(item => item.id === action.payload.id);
+            product ? product.quantity++ : state.push({
+                ...action.payload,
+                quantity: 1
+            })
+        })
+        .addCase(removeFromCart, (state, action) => {
+            return state.filter((item) => item.id !== action.payload.id);
+        })
+        .addCase(modifyCart, (state, action) => {
+            const product = state.find(item => item.id === action.payload.id);
+            product ? product.quantity = action.payload.quantity : []
+        })
+        .addCase(clearCart, () => {
+            return []
+        })
+})

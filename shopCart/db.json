@@ -112,6 +112,13 @@
       "productName": "Phantom X20 Ultra",
       "description": "good",
       "rating": "3"
+    },
+    {
+      "id": "7c0b",
+      "customerName": "Habib",
+      "productName": "Apple vision Pro",
+      "description": "Nice one",
+      "rating": "4"
     }
   ]
 }

@@ -2,6 +2,7 @@
 // import { CartContext } from './../context/CartContext';
 import CartItem from "../components/CartItem";
 import { useSelector,useDispatch } from "react-redux";
+import { clearCart } from "../store/actions-creator/CartAction";
 
 
 const Cart = () => {
@@ -12,9 +13,7 @@ const Cart = () => {
 
     let totalcart  = cart.reduce((acc,item)=>acc + item.quantity * item.price, 0)
     const clearCartHandler =()=>{
-        dispatch({
-            type: 'CLEAR_CART'
-           })
+        dispatch(clearCart())
     }
 
     return (

@@ -3,6 +3,7 @@
 import { Link } from 'react-router-dom';
 
 import { useSelector,useDispatch } from "react-redux";
+import { addToCart,removeFromCart } from '../store/actions-creator/CartAction';
 
 const SingleCart = ({ prod }) => {
     // const { cart, dispatch } = useContext(CartContext);
@@ -11,18 +12,12 @@ const SingleCart = ({ prod }) => {
     const dispatch = useDispatch()
 
     const addToCartHandler = () => {
-        dispatch({
-            type: "ADD_TO_CART",
-            payload: prod,
-        });
+        dispatch(addToCart(prod));
         console.log("Send Prod to reducer", prod);
     };
 
     const removeToCartHandler = () => {
-        dispatch({
-            type: "REMOVE_TO_CART",
-            payload: prod,
-        });
+        dispatch(removeFromCart(prod));
         console.log("Send Prod to reducer", prod);
     };
 
