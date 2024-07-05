@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "SilverEdge Pro 15",
       "price": 800,
       "image": "https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4",
@@ -10,7 +10,7 @@
       "available": true
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Phantom X20 Ultra",
       "price": 500,
       "image": "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -19,7 +19,7 @@
       "available": false
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "TabMaster G5",
       "price": 300,
       "image": "https://images.unsplash.com/photo-1527698266440-12104e498b76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -28,7 +28,7 @@
       "available": true
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "BassKing HD",
       "price": 150,
       "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -37,7 +37,7 @@
       "available": true
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Warrior X10",
       "price": 1200,
       "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop",
@@ -46,7 +46,7 @@
       "available": true
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "TimeSync V3",
       "price": 250,
       "image": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop",
@@ -55,7 +55,7 @@
       "available": true
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "SnapShot Pro 400",
       "price": 900,
       "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop",
@@ -64,7 +64,7 @@
       "available": true
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "HomeGenius Hub",
       "price": 400,
       "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&q=80&w=2070&auto=format&fit=crop",
@@ -72,7 +72,6 @@
       "longDescription": "The HomeGenius Hub is the ultimate smart home hub that connects and controls all your smart devices with ease. It supports a wide range of smart home protocols, including Zigbee, Z-Wave, and Wi-Fi, allowing you to integrate and manage your smart lights, thermostats, security cameras, and more from a single interface. The hub features a user-friendly app that lets you create custom automation routines, monitor your devices, and receive alerts. It also supports voice control through Amazon Alexa and Google Assistant, making it easy to control your smart home with simple voice commands. With its sleek design and powerful performance, the HomeGenius Hub is the perfect solution for creating a connected and efficient smart home.",
       "available": true
     }
-    
   ],
   "cart": [],
   "reviews": [
@@ -105,6 +104,13 @@
       "customerName": "Nahid",
       "productName": "TabMaster G5 ",
       "description": "Tablet is Fine But sometimes not respond",
+      "rating": "3"
+    },
+    {
+      "id": "daff",
+      "customerName": "Salman",
+      "productName": "Phantom X20 Ultra",
+      "description": "good",
       "rating": "3"
     }
   ]

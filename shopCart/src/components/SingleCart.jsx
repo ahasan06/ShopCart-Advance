@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
-import { useContext, useEffect } from "react";
-import { CartContext } from "../context/CartContext";
+// import { CartContext } from "../context/CartContext";
 import { Link } from 'react-router-dom';
 
+import { useSelector,useDispatch } from "react-redux";
 
 const SingleCart = ({ prod }) => {
-    const { cart, dispatch } = useContext(CartContext);
+    // const { cart, dispatch } = useContext(CartContext);
 
+    const cart =  useSelector(storeState=>storeState.cart)
+    const dispatch = useDispatch()
 
     const addToCartHandler = () => {
         dispatch({

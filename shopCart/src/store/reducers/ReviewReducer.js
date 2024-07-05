@@ -1,6 +1,5 @@
 
-
-export const ReviewReducer = (state=[],action) => {
+const ReviewReducer = (state=[],action) => {
   console.log("Reducer State",state);
     switch (action.type) {
         case "SET_REVIEWS":{
@@ -13,3 +12,4 @@ export const ReviewReducer = (state=[],action) => {
             return state
     }
 };
+export default ReviewReducer

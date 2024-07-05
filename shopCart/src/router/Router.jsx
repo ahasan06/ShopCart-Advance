@@ -6,6 +6,7 @@ import Review from "../pages/Review";
 import ProdDetails from "../pages/ProdDetails";
 import Post from "../pages/Post";
 import PostDetails from "../components/PostDetails";
+import Counter from './../pages/Counter';
 
 export const rootRouter = createBrowserRouter([
     {
@@ -14,6 +15,7 @@ export const rootRouter = createBrowserRouter([
         children: [
             { path: "/", element: <Home />, index: true },
             { path: "cart", element: <Cart /> },
+            { path: "counter", element: <Counter /> },
             { path: "review", element: <Review /> },
             { path: "product/:prodId", element: <ProdDetails /> },
             { path: "post", element: <Post /> },

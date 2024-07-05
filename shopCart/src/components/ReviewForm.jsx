@@ -1,9 +1,12 @@
-import {  useState ,useEffect, useContext } from "react";
-import { ReviewContext } from "../context/ReviewContext";
-
+// import {  useState ,useEffect, useContext } from "react";
+// import { ReviewContext } from "../context/ReviewContext";
+import {  useState  } from "react";
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 const ReviewForm = () => {
 
-    const {dispatch} = useContext(ReviewContext)
+    // const {dispatch} = useContext(ReviewContext)
+    const dispatch = useDispatch()
 
     const [formObj, setFormObj] = useState({
         customerName: '',

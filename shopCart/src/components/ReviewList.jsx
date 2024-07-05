@@ -1,12 +1,25 @@
-import { useContext} from "react";
+// import { useContext} from "react";
+// import { ReviewContext } from "../context/ReviewContext";
+import { useSelector,useDispatch} from "react-redux";
 import SingleReview from "./SingleReview";
-import { ReviewContext } from "../context/ReviewContext";
+import { useEffect } from "react";
 
 const ReviewList = () => {
 
-    const { review } = useContext(ReviewContext)
+    // const { review } = useContext(ReviewContext)
+    const review = useSelector(storeState=>storeState.review)
+    const dispatch = useDispatch()
     let totalReview = review.reduce((acc, rev) => acc + Number(rev.rating), 0);
     let avgReview = totalReview / review.length;
+
+    useEffect(() => {
+        fetch("http://localhost:3000/reviews")
+        .then(res => res.json())
+        .then(data => {
+            dispatch({ type: 'SET_REVIEWS', payload: data });
+        })
+        .catch(error => console.error('Error fetching reviews:', error));
+    }, []);
 
     return (
 

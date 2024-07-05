@@ -1,14 +1,15 @@
-import { useContext } from "react";
+// import { useContext } from "react";
+// import { CartContext } from './../context/CartContext';
+// import { ReviewContext } from "../context/ReviewContext";
+
 import { Link } from "react-router-dom";
-import { CartContext } from './../context/CartContext';
-
-import { ReviewContext } from "../context/ReviewContext";
-
+import { useSelector } from "react-redux";
 
 const Nav = () => {
-
-    const{cart} = useContext(CartContext)
-    const {review} =useContext(ReviewContext)
+    // const{cart} = useContext(CartContext)
+    // const {review} =useContext(ReviewContext)
+    const cart  = useSelector(ourStore=>ourStore.cart)
+    const review = useSelector(storeState=>storeState.review)
     return (
         <>
             <div className="header__title">
@@ -22,6 +23,9 @@ const Nav = () => {
                         </li>
                         <li className="nav__item">
                             <Link to="/post" className="nav__link">Post</Link>
+                        </li>
+                        <li className="nav__item">
+                            <Link to="/counter" className="nav__link">Counter</Link>
                         </li>
                         <li className="nav__item">
                             <Link to="/review" className="nav__link">Page Review <span> ({review.length})</span></Link>
