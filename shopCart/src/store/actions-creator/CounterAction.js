@@ -15,6 +15,13 @@ export const DecrementCounter =(payload)=>{
 */
 
 // raw  redux-toolkit createAction
+/*
 import { createAction } from '@reduxjs/toolkit'
 export const incrementCounter = createAction("counter/increment");
 export const DecrementCounter = createAction("counter/decrement");
+*/
+
+// redux-toolkit createSlice ============
+
+import { incrementCounter,DecrementCounter } from "../reducers/CounterReducer";
+export {incrementCounter,DecrementCounter}

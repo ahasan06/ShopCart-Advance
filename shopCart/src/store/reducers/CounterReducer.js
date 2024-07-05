@@ -20,6 +20,7 @@ export default counterReducer
 */
 
 //Redux toolkit Create Reduer=================
+/*
 import {
     createReducer
 } from '@reduxjs/toolkit'
@@ -34,3 +35,24 @@ export const CounterReducer = createReducer(0,(builder)=>{
         return state-action.payload
     })
 })
+*/
+
+//Redux tooltik createslice
+
+import { createSlice } from "@reduxjs/toolkit";
+
+const CounterReducer = createSlice({
+    name:"CounterReducer",
+    initialState:0,
+    reducers:{
+        incrementCounter(state,action){
+            return state+action.payload
+        },
+        DecrementCounter(state,action){
+            return state-action.payload
+        }
+    }
+})
+
+export const {incrementCounter,DecrementCounter} = CounterReducer.actions
+export default CounterReducer.reducer

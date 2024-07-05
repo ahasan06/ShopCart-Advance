@@ -51,6 +51,7 @@ export default CartReducer;
 
 
 //Redux toolkit Create Reduer=================
+/*
 import {
     createReducer
 } from '@reduxjs/toolkit'
@@ -76,3 +77,36 @@ export const CartReducer = createReducer([], (builder) => {
             return []
         })
 })
+*/
+
+// Redux toolkit createslice
+import { createSlice } from "@reduxjs/toolkit";
+
+const CartReducer = createSlice({
+    name:'CartReducer',
+    initialState:[],
+    reducers:{
+        addToCart(state,action){
+            const product = state.find(item => item.id === action.payload.id);
+            product ? product.quantity++ : state.push({
+                ...action.payload,
+                quantity: 1
+            })
+        },
+        removeFromCart(state,action){
+            return state.filter((item) => item.id !== action.payload.id);
+        },
+        modifyCart(state,action){
+            const product = state.find(item => item.id === action.payload.id);
+            product ? product.quantity = action.payload.quantity : 0
+        },
+        clearCart(){
+            return []
+        }
+
+    }
+
+})
+
+export const {addToCart,removeFromCart,modifyCart,clearCart} = CartReducer.actions
+export default CartReducer.reducer

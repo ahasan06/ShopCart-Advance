@@ -20,9 +20,9 @@ export const ourStore = createStore(rootReducer,composeWithDevTools())
 
 //redux toolkit
 import { configureStore } from '@reduxjs/toolkit'
-import {CounterReducer} from './reducers/CounterReducer'
-import { CartReducer } from './reducers/CartReducer'
-import  {ReviewReducer}  from './reducers/ReviewReducer'
+import CounterReducer from './reducers/CounterReducer'
+import CartReducer  from './reducers/CartReducer'
+import ReviewReducer  from './reducers/ReviewReducer'
 
 
 const rootReducer= {

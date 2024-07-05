@@ -17,6 +17,7 @@ export default ReviewReducer
 */
 
 //Redux toolkit Create Reduer=================
+/*
 import {
     createReducer
 } from '@reduxjs/toolkit'
@@ -32,3 +33,24 @@ export const ReviewReducer=createReducer([],(builder)=>{
         return [...action.payload];
     })
 })
+    */
+
+// redux toolkit createSlice================
+
+import { createSlice } from "@reduxjs/toolkit";
+
+const ReviewReducer = createSlice({
+    name:"ReviewReducer",
+    initialState:[],
+    reducers:{
+        addReview(state,action){
+            return [...state,action.payload];
+        },
+        setReview(state,action){
+            return [...action.payload];
+        }
+    }
+
+})
+export const {addReview,setReview} = ReviewReducer.actions
+export default ReviewReducer.reducer
