@@ -25,6 +25,9 @@ const Nav = () => {
                             <Link to="/post" className="nav__link">Post</Link>
                         </li>
                         <li className="nav__item">
+                            <Link to="/user" className="nav__link">User</Link>
+                        </li>
+                        <li className="nav__item">
                             <Link to="/counter" className="nav__link">Counter</Link>
                         </li>
                         <li className="nav__item">

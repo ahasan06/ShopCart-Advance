@@ -1,6 +1,6 @@
 
 //raw redux 
-/*
+
 const counterReducer = (state=0,action)=>{
     console.log(state);
     switch (action.type) {
@@ -17,7 +17,7 @@ const counterReducer = (state=0,action)=>{
 
 }
 export default counterReducer
-*/
+
 
 //Redux toolkit Create Reduer=================
 /*
@@ -37,6 +37,8 @@ export const CounterReducer = createReducer(0,(builder)=>{
 })
 */
 
+
+/*
 //Redux tooltik createslice
 
 import { createSlice } from "@reduxjs/toolkit";
@@ -56,3 +58,4 @@ const CounterReducer = createSlice({
 
 export const {incrementCounter,DecrementCounter} = CounterReducer.actions
 export default CounterReducer.reducer
+*/

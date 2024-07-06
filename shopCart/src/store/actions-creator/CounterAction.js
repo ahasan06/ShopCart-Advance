@@ -1,5 +1,5 @@
 // raw react redux 
-/*
+
 export const incrementCounter =(payload)=>{
     return{
         type:'counter/increment',
@@ -12,7 +12,6 @@ export const DecrementCounter =(payload)=>{
         payload:payload
     }
 }
-*/
 
 // raw  redux-toolkit createAction
 /*
@@ -21,7 +20,9 @@ export const incrementCounter = createAction("counter/increment");
 export const DecrementCounter = createAction("counter/decrement");
 */
 
+/*
 // redux-toolkit createSlice ============
 
 import { incrementCounter,DecrementCounter } from "../reducers/CounterReducer";
 export {incrementCounter,DecrementCounter}
+*/

@@ -7,6 +7,7 @@ import ProdDetails from "../pages/ProdDetails";
 import Post from "../pages/Post";
 import PostDetails from "../components/PostDetails";
 import Counter from './../pages/Counter';
+import User from './../pages/User';
 
 export const rootRouter = createBrowserRouter([
     {
@@ -19,6 +20,7 @@ export const rootRouter = createBrowserRouter([
             { path: "review", element: <Review /> },
             { path: "product/:prodId", element: <ProdDetails /> },
             { path: "post", element: <Post /> },
+            { path: "user", element: <User /> },
             { path: "post/:postId", element: <PostDetails /> }
         ]
     }

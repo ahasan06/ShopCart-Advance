@@ -1,6 +1,5 @@
 // raw react redux
 
-/*
 export const addToCart = (payload) => {
     return {
         type: "ADD_TO_CART",
@@ -30,7 +29,7 @@ export const modifyCart = (payloadId,quantity) => {
         }
     };
 };
-*/
+
 
 //Redux toolkit Create Action
 /*
@@ -41,6 +40,8 @@ export const clearCart = createAction("CLEAR_CART");
 export const modifyCart = createAction("MODIFY_TO_CART");
 */
 
+
+/*
 // CreatSlice Actions ================
 
 import {
@@ -56,3 +57,4 @@ export {
     modifyCart,
     clearCart
 }
+*/
