@@ -1,5 +1,5 @@
 // Raw redux 
-
+/*
 const ReviewReducer = (state=[],action) => {
   console.log("Reducer State",state);
     switch (action.type) {
@@ -15,7 +15,7 @@ const ReviewReducer = (state=[],action) => {
 };
 export default ReviewReducer
 
-
+*/
 //Redux toolkit Create Reduer=================
 /*
 import {
@@ -36,7 +36,7 @@ export const ReviewReducer=createReducer([],(builder)=>{
     */
 
 
-/*
+
 // redux toolkit createSlice================
 
 import { createSlice } from "@reduxjs/toolkit";
@@ -56,4 +56,3 @@ const ReviewReducer = createSlice({
 })
 export const {addReview,setReview} = ReviewReducer.actions
 export default ReviewReducer.reducer
-*/

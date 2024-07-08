@@ -8,6 +8,8 @@ import Post from "../pages/Post";
 import PostDetails from "../components/PostDetails";
 import Counter from './../pages/Counter';
 import User from './../pages/User';
+import ProductForm from "../pages/ProductForm";
+import AllProduct from "../pages/AllProduct";
 
 export const rootRouter = createBrowserRouter([
     {
@@ -21,6 +23,8 @@ export const rootRouter = createBrowserRouter([
             { path: "product/:prodId", element: <ProdDetails /> },
             { path: "post", element: <Post /> },
             { path: "user", element: <User /> },
+            { path: "addProduct", element: <ProductForm /> },
+            { path: "allProduct", element: <AllProduct /> },
             { path: "post/:postId", element: <PostDetails /> }
         ]
     }

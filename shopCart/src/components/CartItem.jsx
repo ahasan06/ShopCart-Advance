@@ -2,13 +2,18 @@
 // import { useContext, useState } from 'react';
 // import { CartContext } from './../context/CartContext';
 
-import {useState } from 'react';
+import {useEffect, useState } from 'react';
 import {useDispatch } from "react-redux";
 import { modifyCart, removeFromCart } from '../store/actions-creator/CartAction';
 const CartItem = ({item}) => {
     // const {dispatch} = useContext(CartContext)
     const [itemQuantity, setItemQuantity] = useState(item.quantity);
+    const [totalPrice, setTotalPrice] = useState(itemQuantity * item.price);
     const dispatch = useDispatch()
+
+    useEffect(()=>{
+        setTotalPrice(itemQuantity * item.price);
+    },[itemQuantity,item.price])
 
 
     const inputOnChange=(e)=>{
@@ -82,7 +87,7 @@ const CartItem = ({item}) => {
                     </button>
                 </div>
             </td>
-            <td>${item.quantity*item.price}</td>
+            <td>${totalPrice}</td>
             <td>
                 <button className="cross-icon"
                 onClick={removeCartHandler}

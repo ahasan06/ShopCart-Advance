@@ -49,7 +49,7 @@ export const ourMiddleWare = (store) => (next) => (action) => {
 }
 */
 //Second way to handle this using function
-
+/*
 export const ourMiddleWare = (store) => (next) => (action) => {
     // Call next for all actions by default
     if (typeof action === 'function') {
@@ -59,3 +59,4 @@ export const ourMiddleWare = (store) => (next) => (action) => {
     }
     next(action);
 }
+*/

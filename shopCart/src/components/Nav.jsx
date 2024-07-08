@@ -22,6 +22,12 @@ const Nav = () => {
                             <Link to="/" className="nav__link">Home</Link>
                         </li>
                         <li className="nav__item">
+                            <Link to="/addProduct" className="nav__link">Add Product</Link>
+                        </li> 
+                        <li className="nav__item">
+                            <Link to="/allProduct" className="nav__link">All Product</Link>
+                        </li>
+                        <li className="nav__item">
                             <Link to="/post" className="nav__link">Post</Link>
                         </li>
                         <li className="nav__item">
